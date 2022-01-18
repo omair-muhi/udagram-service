@@ -53,8 +53,8 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
               const deleteLocalFilesWrapper = async (files: Array<string>) =>
                 await deleteLocalFiles(files);
               // invoke
-              // const files = ["dummy1", "dummy2"];
-              // deleteLocalFilesWrapper(files);
+              const filesToDelete = [resolvedFilteredImagePathString];
+              deleteLocalFilesWrapper(filesToDelete);
             }
           });
         } catch (error) {
