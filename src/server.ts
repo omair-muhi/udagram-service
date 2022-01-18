@@ -59,7 +59,7 @@ require("dotenv").config();
             }
           });
         } catch (error) {
-          res.status(400).send("Error while filtering image!");
+          res.status(422).send("Error while filtering image!");
         }
       };
       // invoke
